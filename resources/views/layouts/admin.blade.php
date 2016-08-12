@@ -6,45 +6,12 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 <title>Quản trị Admin - Amore</title>
 
-<link href="admin/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="admin/css/londinium-theme.css" rel="stylesheet" type="text/css">
-<link href="admin/css/styles.css" rel="stylesheet" type="text/css">
-<link href="admin/css/icons.css" rel="stylesheet" type="text/css">
+<link href="{{asset('admin/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('admin/css/londinium-theme.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('admin/css/styles.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('admin/css/icons.css')}}" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-
-<script type="text/javascript" src="admin/js/plugins/charts/sparkline.min.js"></script>
-
-<script type="text/javascript" src="admin/js/plugins/forms/uniform.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/select2.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/inputmask.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/autosize.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/inputlimit.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/listbox.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/multiselect.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/validate.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/tags.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/switch.min.js"></script>
-
-<script type="text/javascript" src="admin/js/plugins/forms/uploader/plupload.full.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/uploader/plupload.queue.min.js"></script>
-
-<script type="text/javascript" src="admin/js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/forms/wysihtml5/toolbar.js"></script>
-
-<script type="text/javascript" src="admin/js/plugins/interface/daterangepicker.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/fancybox.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/moment.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/jgrowl.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/datatables.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/colorpicker.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/fullcalendar.min.js"></script>
-<script type="text/javascript" src="admin/js/plugins/interface/timepicker.min.js"></script>
-
-<script type="text/javascript" src="admin/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="admin/js/application.js"></script>
 
 </head>
 
@@ -53,7 +20,7 @@
 	<!-- Navbar -->
 	<div class="navbar navbar-inverse" role="navigation">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><img src="admin/images/logo.png" alt="Londinium"></a>
+			<a class="navbar-brand" href="#"><img src="{{asset('admin/images/logo.png')}}" alt="Londinium"></a>
 			<a class="sidebar-toggle"><i class="icon-paragraph-justify2"></i></a>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons">
 				<span class="sr-only">Toggle navbar</span>
@@ -255,7 +222,7 @@
 									</span>
 								</div>
 						    </div>
-					    
+
 					    	<div class="caption text-center">
 					    		<h6>Madison Gartner <small>Front end developer</small></h6>
 					    	</div>
@@ -417,7 +384,7 @@
 					</li>
 				</ul>
 				<!-- /main navigation -->
-				
+
 			</div>
 		</div>
 		<!-- /sidebar -->
@@ -430,7 +397,7 @@
 			<!-- Page header -->
 			<div class="page-header">
 				<div class="page-title">
-					<h3> 
+					<h3>
 					@section('panel-heading')
 			            This is the master sidebar.
 			        @show
@@ -448,7 +415,7 @@
             <!-- /callout -->
 
 
-			<!-- Multiple file uploader -->		
+			<!-- Multiple file uploader -->
 			@yield('content')
             <!-- /multiple file uploader with header inside panel -->
 
@@ -474,3 +441,31 @@
 
 </body>
 </html>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/charts/sparkline.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/uniform.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/select2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/inputmask.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/autosize.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/inputlimit.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/listbox.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/multiselect.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/validate.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/tags.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/switch.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/uploader/plupload.full.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/uploader/plupload.queue.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/wysihtml5/wysihtml5.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/forms/wysihtml5/toolbar.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/daterangepicker.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/fancybox.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/moment.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/jgrowl.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/datatables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/colorpicker.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/fullcalendar.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/plugins/interface/timepicker.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/application.js')}}"></script>
