@@ -11,7 +11,24 @@
 |
 */
 
+/*======================Route for Frontend========================*/
 
-Route::get('/', 'HomeController@index');
-//Route::get('/form', 'HomeController@form');
+Route::get('/', 'Frontends\HomeController@index');
+Route::get('insert', 'Frontends\HomeController@insert');
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================Route for backend=========================*/
+
+Route::get('backend/', 'HomeController@index');
+Route::get('backend/form', 'HomeController@form');
 
